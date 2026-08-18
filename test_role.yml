@@ -1,0 +1,7 @@
+---
+- name: Test custom role from collection
+  hosts: localhost
+  gather_facts: false
+
+  roles:
+    - role: my_own_namespace.yandex_cloud_elk.create_file

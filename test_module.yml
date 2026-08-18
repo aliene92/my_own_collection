@@ -1,0 +1,10 @@
+---
+- name: Test custom Ansible module
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Create file using my own module
+      my_own_namespace.yandex_cloud_elk.my_own_module:
+        path: /tmp/my_own_module_playbook_test.txt
+        content: "Hello from custom Ansible module"
