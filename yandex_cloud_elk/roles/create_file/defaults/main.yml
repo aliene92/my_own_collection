@@ -1,0 +1,3 @@
+---
+my_own_module_path: /tmp/my_own_module_role_test.txt
+my_own_module_content: "Hello from custom Ansible role"
